@@ -1,19 +1,19 @@
-# 学习通禁止复制的模拟键盘输入解决方案
+# Chaoxingstudy Copy-Disabled Simulated Keyboard Input Solution
 
-一个 Windows 本地小工具：把文本逐字发送为键盘输入，适用于你有权限操作、但输入框不支持粘贴的场景。
+A small Windows utility that sends text character by character as keyboard input for authorized scenarios where an input field does not support pasting.
 
-## 运行
+## Run
 
-需要 Windows 和 Python 3：
+Requires Windows and Python 3:
 
 ```powershell
-py .\keyboard_typer.py
+py .\\keyboard_typer.py
 ```
 
-## 使用
+## Usage
 
-1. 在文本框输入内容，设置启动延迟和字符间隔。
-2. 点击“开始输入”，在倒计时内切换到目标输入框。
-3. 工具会逐字发送文本；按 `F8` 或点击“停止”可中断。
+1. Enter text and set the startup delay and character interval.
+2. Click `Start Typing`, then switch to the target input field during the countdown.
+3. The tool sends the text character by character. Press `F8` or click `Stop` to interrupt it.
 
-工具不读取或修改剪贴板。请仅在你有权限操作的窗口中使用；部分程序可能主动拦截模拟输入。
+The tool does not read from or modify the clipboard. Use it only in windows where you are authorized to enter the text. Some applications may block simulated input.
